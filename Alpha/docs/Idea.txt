@@ -1,0 +1,23 @@
+= Alpha Platform idea =
+"3d engine platform" that helps the user to start creating code in (opengl/vulkan/dx) for their needs. 
+Even tho the platform will be design to have in mind other OS platforms it will focus only on Windows.
+
+Systems
+
+ - Must have:
+   Entry point			
+   Application layer	
+   Debugging Support
+   Window Layer		 
+        Inputs	
+   	    Events
+   Renderer -> opengl/vulkan/dx?
+
+ - Good to have:
+   Render API abstraction 
+   Scripting language
+   Memory System
+   Entity-Component System
+   Physics
+   File I/O, Virtual File System (VFS)
+   Build System
