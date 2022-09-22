@@ -1,2 +1,2 @@
 # Alpha
-Alpha Platform
+Alpha OpenGL Platform
