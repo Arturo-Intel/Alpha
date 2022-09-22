@@ -1,0 +1,14 @@
+
+LAYER
+  |
+  |
+  V          creates
+APPLICATION   ---->   WINDOW
+ - OnEvent             - callbackEvent      
+      ^______________________|             
+           events sent
+
+Status:
+- Events are "blocking" type, meaning when an event ocurrs it immediatly gets distpached and must be dealt Immediately.
+
+WIP <<<

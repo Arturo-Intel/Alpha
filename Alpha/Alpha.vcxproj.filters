@@ -4,6 +4,9 @@
     <Filter Include="GLCore">
       <UniqueIdentifier>{613403B3-4DD6-2D89-3691-41DD22D2B4D9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GLCore\Events">
+      <UniqueIdentifier>{25094881-91C9-C3B7-5A04-0D35C6830894}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Alpha.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\GLCore\EntryPoint.h">
       <Filter>GLCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLCore\Events\ApplicationEvent.h">
+      <Filter>GLCore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLCore\Events\Event.h">
+      <Filter>GLCore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLCore\Events\KeyEvent.h">
+      <Filter>GLCore\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GLCore\Events\MouseEvent.h">
+      <Filter>GLCore\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\GLCore\Log.h">
       <Filter>GLCore</Filter>

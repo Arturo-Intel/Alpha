@@ -26,7 +26,8 @@ project "Alpha"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"Alpha/src"
 	}
 
 	filter "system:windows"

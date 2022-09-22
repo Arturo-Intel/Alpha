@@ -11,7 +11,7 @@ Systems
    Build System         - Done; Using 3rd party project generation lib ->premake https://github.com/premake/premake-core
    Window Layer		 
         Inputs	
-   	    Events
+   	    Events          - Done; Please review Handling Events.txt for reference
    Renderer -> opengl/vulkan/dx?
 v1.0 <----
  - Good to have:
