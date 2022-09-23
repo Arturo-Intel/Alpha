@@ -61,10 +61,10 @@ namespace Alpha {
 	};
 
 
-	class ALPHA_API MouseButtonPressed : public MouseButtonEvent
+	class ALPHA_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonPressed(int button)
+		MouseButtonPressedEvent(int button)
 			:MouseButtonEvent(button) {}
 
 		std::string ToString() const override
@@ -79,10 +79,10 @@ namespace Alpha {
 	};
 
 
-	class ALPHA_API MouseButtonReleased : public MouseButtonEvent
+	class ALPHA_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonReleased(int button)
+		MouseButtonReleasedEvent(int button)
 			:MouseButtonEvent(button) {}
 
 		std::string ToString() const override

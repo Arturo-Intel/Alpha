@@ -13,6 +13,7 @@
 #include <unordered_set>
 
 
+#include "EngineCore/Log.h"
 
 #ifdef ALPHA_PLATFORM_WINDOWS
 	#include <Windows.h>
