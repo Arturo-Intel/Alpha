@@ -17,6 +17,9 @@ project "Alpha"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	
+	pchheader "alphapch.h"
+	pchsource "Alpha/src/alphapch.cpp"
 
 	files
 	{

@@ -2,9 +2,6 @@
 
 #include "GLCore/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Alpha {
 
 	enum class EventType

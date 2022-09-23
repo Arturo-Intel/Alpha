@@ -34,6 +34,7 @@
     <ClInclude Include="src\GLCore\Log.h">
       <Filter>GLCore</Filter>
     </ClInclude>
+    <ClInclude Include="src\alphapch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\GLCore\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\GLCore\Log.cpp">
       <Filter>GLCore</Filter>
     </ClCompile>
+    <ClCompile Include="src\alphapch.cpp" />
   </ItemGroup>
 </Project>

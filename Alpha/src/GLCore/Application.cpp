@@ -1,3 +1,4 @@
+#include "alphapch.h"
 #include "Application.h"
 
 #include "GLCore/Events/ApplicationEvent.h"
