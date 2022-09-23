@@ -80,7 +80,7 @@
       <PrecompiledHeaderFile>alphapch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ALPHA_PLATFORM_WINDOWS;ALPHA_BUILD_DLL;GLFW_INCLUDE_NONE;ALPHA_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\Include;vendor\Glad\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\Include;vendor\Glad\Include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -104,7 +104,7 @@
       <PrecompiledHeaderFile>alphapch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ALPHA_PLATFORM_WINDOWS;ALPHA_BUILD_DLL;GLFW_INCLUDE_NONE;ALPHA_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\Include;vendor\Glad\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\Include;vendor\Glad\Include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -132,7 +132,7 @@
       <PrecompiledHeaderFile>alphapch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ALPHA_PLATFORM_WINDOWS;ALPHA_BUILD_DLL;GLFW_INCLUDE_NONE;ALPHA_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\Include;vendor\Glad\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>vendor\spdlog\include;src;vendor\GLFW\Include;vendor\Glad\Include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -155,6 +155,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\EngineCore\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Alpha.h" />
     <ClInclude Include="src\EngineCore\Application.h" />
     <ClInclude Include="src\EngineCore\Core.h" />
@@ -167,14 +168,18 @@
     <ClInclude Include="src\EngineCore\LayerStack.h" />
     <ClInclude Include="src\EngineCore\Log.h" />
     <ClInclude Include="src\EngineCore\Window.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\alphapch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\EngineCore\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\EngineCore\Application.cpp" />
     <ClCompile Include="src\EngineCore\Layer.cpp" />
     <ClCompile Include="src\EngineCore\LayerStack.cpp" />
     <ClCompile Include="src\EngineCore\Log.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\alphapch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
@@ -186,6 +191,9 @@
     </ProjectReference>
     <ProjectReference Include="vendor\GLAD\Glad.vcxproj">
       <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

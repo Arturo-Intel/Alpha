@@ -10,7 +10,7 @@ public:
 
 	void OnUpdate() override
 	{
-		LOG_INFO("ExampleLayer::Update");
+		//LOG_INFO("ExampleLayer::Update");
 	}
 
 	void OnEvent(Alpha::Event& event) override
@@ -25,6 +25,7 @@ public:
 	SandboxApp() 
 	{ 
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Alpha::ImGuiLayer());
 	}
 
 	~SandboxApp()
