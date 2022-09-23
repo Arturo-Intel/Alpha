@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -110,6 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -137,6 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -160,18 +163,22 @@
     <ClInclude Include="src\EngineCore\Events\Event.h" />
     <ClInclude Include="src\EngineCore\Events\KeyEvent.h" />
     <ClInclude Include="src\EngineCore\Events\MouseEvent.h" />
+    <ClInclude Include="src\EngineCore\Layer.h" />
+    <ClInclude Include="src\EngineCore\LayerStack.h" />
     <ClInclude Include="src\EngineCore\Log.h" />
     <ClInclude Include="src\EngineCore\Window.h" />
-    <ClInclude Include="src\alphapch.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\alphapch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EngineCore\Application.cpp" />
+    <ClCompile Include="src\EngineCore\Layer.cpp" />
+    <ClCompile Include="src\EngineCore\LayerStack.cpp" />
     <ClCompile Include="src\EngineCore\Log.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\alphapch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

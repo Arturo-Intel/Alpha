@@ -7,6 +7,12 @@
     <Filter Include="EngineCore\Events">
       <UniqueIdentifier>{68A16B3D-D4B7-69D3-1D2F-F5F489843A5B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Alpha.h" />
@@ -31,23 +37,39 @@
     <ClInclude Include="src\EngineCore\Events\MouseEvent.h">
       <Filter>EngineCore\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\EngineCore\Layer.h">
+      <Filter>EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EngineCore\LayerStack.h">
+      <Filter>EngineCore</Filter>
+    </ClInclude>
     <ClInclude Include="src\EngineCore\Log.h">
       <Filter>EngineCore</Filter>
     </ClInclude>
     <ClInclude Include="src\EngineCore\Window.h">
       <Filter>EngineCore</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\alphapch.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EngineCore\Application.cpp">
       <Filter>EngineCore</Filter>
     </ClCompile>
+    <ClCompile Include="src\EngineCore\Layer.cpp">
+      <Filter>EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EngineCore\LayerStack.cpp">
+      <Filter>EngineCore</Filter>
+    </ClCompile>
     <ClCompile Include="src\EngineCore\Log.cpp">
       <Filter>EngineCore</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\alphapch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,7 @@
 
 // For use by Alpha Apps.
 #include "EngineCore/Application.h"
+#include "EngineCore/Layer.h"
 #include "EngineCore/Log.h"
 
 
