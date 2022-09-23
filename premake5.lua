@@ -10,6 +10,12 @@ workspace "Alpha"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Alpha/vendor/GLFW/Include"
+
+include "Alpha/vendor/GLFW"
+
 project "Alpha"
 	location "Alpha"
 	kind "SharedLib"
@@ -24,13 +30,20 @@ project "Alpha"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/src/**.cpp"
 	}
 
 	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include",
-		"Alpha/src"
+		"Alpha/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+			"GLFW",
+			"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -62,6 +75,8 @@ project "Alpha"
 	filter "configurations:Dist"
 		defines "ALPHA_DIST"
 		optimize "On"
+
+
 
 project "Sandbox"
 	location "Sandbox"

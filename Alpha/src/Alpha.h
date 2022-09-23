@@ -1,9 +1,9 @@
 #pragma once
 
 // For use by Alpha Apps.
-#include "GLCore/Application.h"
-#include "GLCore/Log.h"
+#include "EngineCore/Application.h"
+#include "EngineCore/Log.h"
 
 
 // Entry point
-#include "GLCore/EntryPoint.h"
+#include "EngineCore/EntryPoint.h"

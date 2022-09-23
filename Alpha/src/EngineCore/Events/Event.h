@@ -1,6 +1,6 @@
 #pragma once
-
-#include "GLCore/Core.h"
+#include "alphapch.h"
+#include "EngineCore/Core.h"
 
 namespace Alpha {
 

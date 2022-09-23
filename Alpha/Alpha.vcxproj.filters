@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="GLCore">
-      <UniqueIdentifier>{613403B3-4DD6-2D89-3691-41DD22D2B4D9}</UniqueIdentifier>
+    <Filter Include="EngineCore">
+      <UniqueIdentifier>{04E20003-F099-4250-59A1-1BAC4578DD40}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GLCore\Events">
-      <UniqueIdentifier>{25094881-91C9-C3B7-5A04-0D35C6830894}</UniqueIdentifier>
+    <Filter Include="EngineCore\Events">
+      <UniqueIdentifier>{68A16B3D-D4B7-69D3-1D2F-F5F489843A5B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Alpha.h" />
-    <ClInclude Include="src\GLCore\Application.h">
-      <Filter>GLCore</Filter>
+    <ClInclude Include="src\EngineCore\Application.h">
+      <Filter>EngineCore</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\Core.h">
-      <Filter>GLCore</Filter>
+    <ClInclude Include="src\EngineCore\Core.h">
+      <Filter>EngineCore</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\EntryPoint.h">
-      <Filter>GLCore</Filter>
+    <ClInclude Include="src\EngineCore\EntryPoint.h">
+      <Filter>EngineCore</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\Events\ApplicationEvent.h">
-      <Filter>GLCore\Events</Filter>
+    <ClInclude Include="src\EngineCore\Events\ApplicationEvent.h">
+      <Filter>EngineCore\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\Events\Event.h">
-      <Filter>GLCore\Events</Filter>
+    <ClInclude Include="src\EngineCore\Events\Event.h">
+      <Filter>EngineCore\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\Events\KeyEvent.h">
-      <Filter>GLCore\Events</Filter>
+    <ClInclude Include="src\EngineCore\Events\KeyEvent.h">
+      <Filter>EngineCore\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\Events\MouseEvent.h">
-      <Filter>GLCore\Events</Filter>
+    <ClInclude Include="src\EngineCore\Events\MouseEvent.h">
+      <Filter>EngineCore\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\GLCore\Log.h">
-      <Filter>GLCore</Filter>
+    <ClInclude Include="src\EngineCore\Log.h">
+      <Filter>EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EngineCore\Window.h">
+      <Filter>EngineCore</Filter>
     </ClInclude>
     <ClInclude Include="src\alphapch.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\GLCore\Application.cpp">
-      <Filter>GLCore</Filter>
+    <ClCompile Include="src\EngineCore\Application.cpp">
+      <Filter>EngineCore</Filter>
     </ClCompile>
-    <ClCompile Include="src\GLCore\Log.cpp">
-      <Filter>GLCore</Filter>
+    <ClCompile Include="src\EngineCore\Log.cpp">
+      <Filter>EngineCore</Filter>
     </ClCompile>
     <ClCompile Include="src\alphapch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
