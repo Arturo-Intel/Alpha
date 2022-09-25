@@ -7,14 +7,14 @@
     <Filter Include="EngineCore\Events">
       <UniqueIdentifier>{68A16B3D-D4B7-69D3-1D2F-F5F489843A5B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="EngineCore\ImGui">
+      <UniqueIdentifier>{2ECA93D3-1AC3-B225-43F5-97AA2F4D9231}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Platform\OpenGL">
-      <UniqueIdentifier>{a0fc6854-d6db-42bb-94c4-927575f48f04}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +40,15 @@
     <ClInclude Include="src\EngineCore\Events\MouseEvent.h">
       <Filter>EngineCore\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\EngineCore\ImGui\ImGuiLayer.h">
+      <Filter>EngineCore\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EngineCore\Input.h">
+      <Filter>EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EngineCore\KeyCodes.h">
+      <Filter>EngineCore</Filter>
+    </ClInclude>
     <ClInclude Include="src\EngineCore\Layer.h">
       <Filter>EngineCore</Filter>
     </ClInclude>
@@ -49,20 +58,29 @@
     <ClInclude Include="src\EngineCore\Log.h">
       <Filter>EngineCore</Filter>
     </ClInclude>
+    <ClInclude Include="src\EngineCore\MouseButtonCodes.h">
+      <Filter>EngineCore</Filter>
+    </ClInclude>
     <ClInclude Include="src\EngineCore\Window.h">
       <Filter>EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\alphapch.h" />
-    <ClInclude Include="src\EngineCore\ImGui\ImGuiLayer.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
-    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\EngineCore\Application.cpp">
       <Filter>EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EngineCore\ImGui\ImGuiBuild.cpp">
+      <Filter>EngineCore\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EngineCore\ImGui\ImGuiLayer.cpp">
+      <Filter>EngineCore\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\EngineCore\Layer.cpp">
       <Filter>EngineCore</Filter>
@@ -73,11 +91,12 @@
     <ClCompile Include="src\EngineCore\Log.cpp">
       <Filter>EngineCore</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\alphapch.cpp" />
-    <ClCompile Include="src\EngineCore\ImGui\ImGuiLayer.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
   </ItemGroup>
 </Project>

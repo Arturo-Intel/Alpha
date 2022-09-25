@@ -5,8 +5,9 @@
 #include "EngineCore/Layer.h"
 #include "EngineCore/Log.h"
 
-#include "EngineCore/ImGui/ImGuiLayer.h"
-
+#include "EngineCore/Input.h"
+#include "EngineCore/KeyCodes.h"
+#include "EngineCore/MouseButtonCodes.h"
 
 // Entry point
 #include "EngineCore/EntryPoint.h"

@@ -5,7 +5,7 @@
 #include "EngineCore/Events/KeyEvent.h"
 #include "EngineCore/Events/MouseEvent.h"
 
-#include <glad/glad.h>
+#include <glad/glad.h> // temp?
 
 namespace Alpha {
 	

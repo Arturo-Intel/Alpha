@@ -15,6 +15,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Alpha/vendor/GLFW/Include"
 IncludeDir["Glad"] = "Alpha/vendor/Glad/Include"
 IncludeDir["ImGui"] = "Alpha/vendor/imgui/"
+IncludeDir["glm"] = "Alpha/vendor/glm"
 
 include "Alpha/vendor/GLFW"
 include "Alpha/vendor/GLAD"
@@ -43,7 +44,8 @@ project "Alpha"
 		"Alpha/src",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -107,7 +109,8 @@ project "Sandbox"
 	includedirs
 	{
 		"Alpha/vendor/spdlog/include",
-		"Alpha/src"
+		"Alpha/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links

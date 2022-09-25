@@ -7,6 +7,7 @@
 #include "EngineCore/Events/Event.h"
 #include "EngineCore/Events/ApplicationEvent.h"
 
+#include "EngineCore/ImGui/ImGuiLayer.h"
 
 
 namespace Alpha {
@@ -31,6 +32,7 @@ namespace Alpha {
 		bool OnWindowClose(WindowCloseEvent& e);
 		
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 
