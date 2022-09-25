@@ -4,6 +4,6 @@
 [submodule "Alpha/vendor/GLFW"]
 	path = Alpha/vendor/GLFW
 	url = https://github.com/r2medina/glfw
-[submodule "Alpha/vendor/imgui"]
-	path = Alpha/vendor/imgui
-	url = https://github.com/r2medina/imgui
+[submodule "Alpha/vendor/glm"]
+	path = Alpha/vendor/glm
+	url = https://github.com/g-truc/glm
