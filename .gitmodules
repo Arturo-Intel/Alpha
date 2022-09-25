@@ -7,3 +7,6 @@
 [submodule "Alpha/vendor/glm"]
 	path = Alpha/vendor/glm
 	url = https://github.com/g-truc/glm
+[submodule "Alpha/vendor/imgui"]
+	path = Alpha/vendor/imgui
+	url = https://github.com/r2medina/imgui
