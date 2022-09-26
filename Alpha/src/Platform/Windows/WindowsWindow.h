@@ -1,6 +1,8 @@
 #pragma once
 
 #include "EngineCore/Window.h"
+#include "EngineCore/Renderer/GraphicsContext.h"
+
 
 #include <GLFW/glfw3.h>
 
@@ -29,6 +31,7 @@ namespace Alpha {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{

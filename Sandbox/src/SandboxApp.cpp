@@ -1,4 +1,6 @@
 #include <Alpha.h>
+#include "imgui/imgui.h"
+ 
 
 class ExampleLayer : public Alpha::Layer {
 public:
@@ -11,6 +13,15 @@ public:
 	void OnUpdate() override
 	{
 
+		
+	}
+	void OnImGuiRender() override
+	{
+		
+		//ImGui::Text("HEllo world");
+		
+		static bool show = true;
+		ImGui::ShowDemoWindow(&show);
 	}
 
 	void OnEvent(Alpha::Event& event) override

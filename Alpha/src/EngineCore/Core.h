@@ -1,10 +1,14 @@
 #pragma once
 
 #ifdef ALPHA_PLATFORM_WINDOWS
-	#ifdef ALPHA_BUILD_DLL
-		#define ALPHA_API __declspec(dllexport)
+	#if ALPHA_DYNAMIC_LINK
+		#ifdef ALPHA_BUILD_DLL
+			#define ALPHA_API __declspec(dllexport)
+		#else
+			#define ALPHA_API __declspec(dllimport)
+		#endif
 	#else
-		#define ALPHA_API __declspec(dllimport)
+		#define ALPHA_API
 	#endif
 #else
 	#error Alpha only supports Windows.

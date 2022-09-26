@@ -1,5 +1,6 @@
 workspace "Alpha"
 	architecture "x64"
+	startproject "Sandbox"
 	
 	configurations
 	{
@@ -17,14 +18,18 @@ IncludeDir["Glad"] = "Alpha/vendor/Glad/Include"
 IncludeDir["ImGui"] = "Alpha/vendor/imgui/"
 IncludeDir["glm"] = "Alpha/vendor/glm"
 
+
 include "Alpha/vendor/GLFW"
 include "Alpha/vendor/GLAD"
 include "Alpha/vendor/imgui"
 
 project "Alpha"
 	location "Alpha"
-	kind "SharedLib"
+	kind "StaticLib"
 	language "C++"
+	cppdialect "C++17"
+	staticruntime "on"
+
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -36,6 +41,11 @@ project "Alpha"
 	{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
+	}
+
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
 	}
 
 	includedirs
@@ -57,8 +67,6 @@ project "Alpha"
 	}
 
 	filter "system:windows"
-		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 
 		defines 
@@ -68,34 +76,30 @@ project "Alpha"
 			"GLFW_INCLUDE_NONE"
 		}
 
-		postbuildcommands
-		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
-		}
 
 	filter "configurations:Debug"
 		defines "ALPHA_DEBUG"
-		buildoptions "/MDd"
-		symbols "On"
+		runtime "Debug"
+		symbols "on"
 	
 
 	filter "configurations:Release"
 		defines "ALPHA_RELEASE"
-		buildoptions "/MD"
-		optimize "On"
+		runtime "Release"
+		optimize "on"
 	
 
 	filter "configurations:Dist"
 		defines "ALPHA_DIST"
-		buildoptions "/MD"
-		optimize "On"
-
-
+		runtime "Release"
+		optimize "on"
 
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	staticruntime "on"
+	cppdialect "C++17"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -110,7 +114,9 @@ project "Sandbox"
 	{
 		"Alpha/vendor/spdlog/include",
 		"Alpha/src",
+		"Alpha/vendor/",
 		"%{IncludeDir.glm}"
+
 	}
 
 	links
@@ -119,8 +125,6 @@ project "Sandbox"
 	}
 
 	filter "system:windows"
-		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 
 		defines 
@@ -130,17 +134,17 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "ALPHA_DEBUG"
-		buildoptions "/MDd"
-		symbols "On"
+		runtime "Debug"
+		symbols "on"
 	
 
 	filter "configurations:Release"
 		defines "ALPHA_RELEASE"
-		buildoptions "/MD"
-		optimize "On"
+		runtime "Release"
+		optimize "on"
 	
 
 	filter "configurations:Dist"
 		defines "ALPHA_DIST"
-		buildoptions "/MD"
-		optimize "On"
+		runtime "Release"
+		optimize "on"
