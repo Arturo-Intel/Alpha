@@ -114,8 +114,10 @@ project "Sandbox"
 	{
 		"Alpha/vendor/spdlog/include",
 		"Alpha/src",
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.GLFW}",
 		"Alpha/vendor/",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.Glad}"
 
 	}
 

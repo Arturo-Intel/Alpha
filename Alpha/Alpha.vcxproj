@@ -143,8 +143,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
-    <ClInclude Include="src\EngineCore\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Platform\D3D12\D3D12Context.h" />
     <ClInclude Include="src\Alpha.h" />
     <ClInclude Include="src\EngineCore\Application.h" />
     <ClInclude Include="src\EngineCore\Core.h" />
@@ -160,19 +159,22 @@
     <ClInclude Include="src\EngineCore\LayerStack.h" />
     <ClInclude Include="src\EngineCore\Log.h" />
     <ClInclude Include="src\EngineCore\MouseButtonCodes.h" />
+    <ClInclude Include="src\EngineCore\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\EngineCore\Window.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\alphapch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\D3D12\D3D12Context.cpp" />
     <ClCompile Include="src\EngineCore\Application.cpp" />
     <ClCompile Include="src\EngineCore\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\EngineCore\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\EngineCore\Layer.cpp" />
     <ClCompile Include="src\EngineCore\LayerStack.cpp" />
     <ClCompile Include="src\EngineCore\Log.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\alphapch.cpp">

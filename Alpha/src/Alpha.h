@@ -9,5 +9,8 @@
 #include "EngineCore/KeyCodes.h"
 #include "EngineCore/MouseButtonCodes.h"
 
+#include "EngineCore/ImGui/ImGuiLayer.h"
+
+
 // Entry point
 #include "EngineCore/EntryPoint.h"

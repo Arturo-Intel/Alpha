@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ALPHA_PLATFORM_WINDOWS;ALPHA_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\Alpha\vendor\spdlog\include;..\Alpha\src;..\Alpha\vendor;..\Alpha\vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Alpha\vendor\spdlog\include;..\Alpha\src;..\Alpha\vendor\glm;..\Alpha\vendor\GLFW\Include;..\Alpha\vendor;..\Alpha\vendor\Glad\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -96,7 +96,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ALPHA_PLATFORM_WINDOWS;ALPHA_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\Alpha\vendor\spdlog\include;..\Alpha\src;..\Alpha\vendor;..\Alpha\vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Alpha\vendor\spdlog\include;..\Alpha\src;..\Alpha\vendor\glm;..\Alpha\vendor\GLFW\Include;..\Alpha\vendor;..\Alpha\vendor\Glad\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -117,7 +117,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ALPHA_PLATFORM_WINDOWS;ALPHA_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\Alpha\vendor\spdlog\include;..\Alpha\src;..\Alpha\vendor;..\Alpha\vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Alpha\vendor\spdlog\include;..\Alpha\src;..\Alpha\vendor\glm;..\Alpha\vendor\GLFW\Include;..\Alpha\vendor;..\Alpha\vendor\Glad\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>

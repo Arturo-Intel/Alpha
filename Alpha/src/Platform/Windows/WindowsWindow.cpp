@@ -37,8 +37,8 @@ namespace Alpha {
 		m_Data.Width = props.Width;
 		m_Data.Height = props.Height;
 
-		LOG_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
+		LOG_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
 
 		if (!s_GLFWInitialized)
 		{
@@ -50,8 +50,11 @@ namespace Alpha {
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		
+
 		m_Context = new OpenGLContext(m_Window);
+		
 		m_Context->Init();
+
 
 
 

@@ -4,7 +4,8 @@
 #include "EngineCore/Log.h"
 
 #include <EngineCore/Input.h>
-#include <glad/glad.h>
+
+
 
 namespace Alpha {
 
@@ -20,6 +21,8 @@ namespace Alpha {
 
 		m_ImGuiLayer = new ImGuiLayer();
 		PushOverlay(m_ImGuiLayer);
+		
+		
 	}
 
 	Application::~Application()
@@ -56,9 +59,6 @@ namespace Alpha {
 	{
 		while (m_Running)
 		{
-
-			glClearColor(0, 0, 0, 1);
-			glClear(GL_COLOR_BUFFER_BIT);
 
 		    for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();

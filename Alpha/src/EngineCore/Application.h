@@ -36,6 +36,8 @@ namespace Alpha {
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 
+
+
 	private:
 		static Application* s_Instance;
 	};
